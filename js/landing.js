@@ -66,3 +66,7 @@ window.addEventListener('scroll', function() {
     backToTopBtn.classList.add('hidden');
   }
 });
+
+backToTopBtn.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
