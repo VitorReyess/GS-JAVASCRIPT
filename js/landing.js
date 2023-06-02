@@ -72,6 +72,7 @@ backToTopBtn.addEventListener('click', function() {
 });
 
 //formularios
+
 const inserirNome = document.getElementById("name");
 const inserirTelefone = document.getElementById("phone");
 const inserirEmail = document.getElementById("email");
