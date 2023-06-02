@@ -70,3 +70,10 @@ window.addEventListener('scroll', function() {
 backToTopBtn.addEventListener('click', function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+//formularios
+const inserirNome = document.getElementById("name");
+const inserirTelefone = document.getElementById("phone");
+const inserirEmail = document.getElementById("email");
+const inserirMensagem = document.getElementById("message");
+const enviar = document.getElementById("botaoEnviar");
