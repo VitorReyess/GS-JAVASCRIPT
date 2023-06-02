@@ -54,3 +54,15 @@ function scrollToContent() {
   var offset = contentElement.getBoundingClientRect().top + window.scrollY - (windowHeight * 0.38);
   window.scrollTo({ top: offset, behavior: 'smooth' });
 }
+
+//botao de voltar ao topo
+var backToTopBtn = document.getElementById('backToTopBtn');
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 0) {
+    backToTopBtn.classList.remove('hidden');
+  } 
+  else {
+    
+    backToTopBtn.classList.add('hidden');
+  }
+});
