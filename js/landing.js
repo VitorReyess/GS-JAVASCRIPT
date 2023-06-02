@@ -36,3 +36,12 @@ setTimeout(function() {
 
     setInterval(changeBackgroundImage, 3000);
   });
+
+//função para scrollar, offset por conta do header com posição fixa
+function scrollToContent() {
+  var contentElementId = this.getAttribute("id") + "P";
+  var contentElement = document.getElementById(contentElementId);
+  var windowHeight = window.innerHeight;
+  var offset = contentElement.getBoundingClientRect().top + window.scrollY - (windowHeight * 0.38);
+  window.scrollTo({ top: offset, behavior: 'smooth' });
+}
