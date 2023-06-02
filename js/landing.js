@@ -36,3 +36,12 @@ setTimeout(function() {
 
     setInterval(changeBackgroundImage, 3000);
   });
+
+//scrollar para parte desejada
+p1Element.addEventListener("click", scrollToContent);
+p2Element.addEventListener("click", scrollToContent);
+p3Element.addEventListener("click", scrollToContent);
+p4Element.addEventListener("click", scrollToContent);
+p5Element.addEventListener("click", scrollToContent);
+p6Element.addEventListener("click", scrollToContent);
+p7Element.addEventListener("click", scrollToContent);
